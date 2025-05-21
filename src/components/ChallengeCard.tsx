@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faCheck, faClock, faLightbulb, faSave } from '@fortawesome/free-solid-svg-icons';
 import type { Challenge } from '../data/challenges';
