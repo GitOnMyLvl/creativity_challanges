@@ -27,8 +27,8 @@ h1 {
 
 .challenge-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.25rem;
   padding: 1rem;
   width: 100%;
 }
@@ -36,19 +36,19 @@ h1 {
 /* Responsive grid adjustments */
 @media (min-width: 640px) {
   .challenge-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
   .challenge-grid {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
 }
 
 @media (min-width: 1440px) {
   .challenge-grid {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
 }
 
@@ -115,9 +115,30 @@ h1 {
 
 .completed-text {
   position: absolute;
-  bottom: 1rem;
-  color: #22c55e;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #a7f3d0; /* Light green for completed text */
+  font-weight: bold;
+}
+
+.reset-button {
+  display: block;
+  margin: 2rem auto 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ef4444; /* Red color for reset/danger */
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #dc2626; /* Darker red on hover */
 }
 
 /* Animation for unlocking */
